@@ -1,5 +1,4 @@
 
-console.log(burgerKing)
 // let
 let burgerKing = "Burger $5.99"
 console.log(burgerKing)
