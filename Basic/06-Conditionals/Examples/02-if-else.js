@@ -1,8 +1,8 @@
-// if, else, if else
+// if, else, (si, no)
 
 let edad = 24
 
-// else (si no)
+
 if (edad == 20) {
     console.log("La edad es 24")
 } else {
