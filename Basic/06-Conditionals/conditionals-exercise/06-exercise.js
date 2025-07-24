@@ -3,9 +3,7 @@
 let month = "December"
 let seasonsYear
 
-if (month == "July") {
-    seasonsYear = "Summer"
-} else if (["June", "July", "August"].includes(month)) {
+if (["June", "July", "August"].includes(month)) {
     seasonsYear = "Summer"
 } else if (["September", "October", "November"].includes(month)) {
     seasonsYear = "Fall"

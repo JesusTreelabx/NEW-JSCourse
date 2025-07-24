@@ -6,7 +6,7 @@ let edad = 35
 if (edad == 18) {
     console.log("Cumple con la edad requerdida para votar")
 } else if (edad < 18) {
-    let aniosFaltantes = 3
+    let aniosFaltantes = edad - 18
     console.log(`No cumple la edad requerida para votar le faltan ${aniosFaltantes} anios para tener 18`)
 } else {
     console.log("Aun tiene la edad adecuada para votar")
