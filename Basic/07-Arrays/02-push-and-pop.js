@@ -5,34 +5,14 @@ let myArray = []
 myArray = []
 
 // push y pop
-myArray.push("Yisus")
+myArray.push("Yisus") // (push) agrega un elemento al array.
 myArray.push("Alessa")
 myArray.push("John")
 myArray.push(37)
 
 console.log(myArray)
-console.log(myArray.pop()) // Elimina el uiltimo y lo devuelve
-myArray.pop()
-
-
-
-// shift u unshift
-console.log(myArray.shift())
-console.log(myArray)
-
-myArray.unshift("Hola") // Sirve para agregar uno o mas elementos al principio del Array
-console.log(myArray)
-
-
-
-// length
-console.log(myArray.length)
-
-
-
-// clear
-myArray.length = 0  // alternativa
-console.log(myArray)
+console.log(myArray.pop()) // Elimina el último y lo devuelve.
+myArray.pop()  // (pop) Elimina el úiltimo elemento del array.
 
 
 
