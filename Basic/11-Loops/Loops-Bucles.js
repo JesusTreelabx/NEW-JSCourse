@@ -47,3 +47,14 @@ do {
 
 
 // for of
+/* Caso de uso: McDonald's
+Imagina que trabajas en un McDonald's y necesitas procesar los pedidos de los clientes 
+en una lista. Cada pedido tiene un producto (como "Big Mac" o "McFlurry"). 
+Usaremos un bucle for...of para iterar sobre la lista de pedidos y mostrar 
+un mensaje para cada uno, como si estuviéramos preparando los productos.
+Escenario: Un cliente hace un pedido con varios ítems, y el sistema debe mostrar 
+cada ítem para que el cocinero lo prepare. */
+let pedidos = ["Big Mac", "McFlurry", "Papas Fritas", "Coca-Cola"]
+for (let item of pedidos) {
+    console.log(`Preparando: ${item}`)
+}
