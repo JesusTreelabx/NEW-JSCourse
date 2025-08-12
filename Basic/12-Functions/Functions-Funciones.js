@@ -100,4 +100,33 @@ console.log(result)
 
 
 
-// Funciones anidadas
+// Funciones anidadas 
+function extern() {
+    console.log("Funcion externa")
+    function intern() {
+        console.log("Funcion interna")
+    }
+    intern()
+}
+
+extern()
+// intern().    Esto es un error, esto esta fuera del scope
+
+
+
+
+
+
+// Funciones de orden superior
+function applyFunc(func, param) {
+    func(param)
+}
+
+applyFunc(myFunc3, "Funcion de orden superior")
+
+
+
+
+
+
+// forEach
