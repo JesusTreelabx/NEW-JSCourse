@@ -1,8 +1,9 @@
 
 
-// Crea una Function de verificar stock de productos
-// Contexto: Una tienda tiene un arreglo de productos con sus cantidades.
+// Crea una Function de verificar stock de productos, Contexto:
+// Una tienda tiene un arreglo de productos con sus cantidades.
 // Recorre el arreglo y muestra solo los productos que tienen más de 0 en stock.
+
 function verStock(arrProd) {
     for (let i = 0; i < arrProd.length; i++) {
         if (arrProd[i] > 0) {

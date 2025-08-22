@@ -1,9 +1,9 @@
 
 
-// Aplicar descuentos
-// Contexto: Una tienda tiene un arreglo de precios.
+// Aplicar descuentos, Contexto:
+// Una tienda tiene un arreglo de precios.
 // Si el precio es mayor a $500, aplicar un 10% de descuento. 
-// Guarda los nuevos precios en otro arreglo.
+// Guarda los nuevos precios en un nuevo arreglo.
 
 const preciosProductosCliente1 = [400, 700, 200, 550, 900, 300, 1000]
 
