@@ -5,15 +5,17 @@
 indique si lleva vegetales extra. El precio base del sanwich es $4, si lleva 
 vegetales extra se suma $1.
 La funcion debe devolver un string:
-"Sandwich de [proteina] en pann [pan] en pan [pan] con [extra/no extra] vegetales cuesta $ [total] */
+"Sandwich de [proteina] en pan [pan] en pan [pan] con [extra/no extra]
+ vegetales cuesta $ [total] */
 
-function crearSandwichSubway(pan){
-    let sanwichBase = 4
-    let sum = sanwichBase
+function crearSandwichSubway(pan, proteina, extras) {
+    let precioBase = 4
+    let precioExtras = extras === true ? 1 : 0
 
-    for(let i = 0; i< pan.length; i++) {
-        if(pan[i] === "integral" + "pollo") {
-            "vegetales" = true + sum += 1 
-        }
-    }
+    return `Sandwich de  ${proteina}  en pan  ${pan} 
+        con extra vegetales  ${extras}  cuesta $  ${precioBase + precioExtras}`
 }
+
+
+console.log(crearSandwichSubway("parmesano", "pollo", true ))
+console.log(crearSandwichSubway("integral", "atun", false))
