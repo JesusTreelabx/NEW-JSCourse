@@ -7,7 +7,8 @@ Cada hamburguesa cuesta $5, cada porción de papas fritas $2 y cada refresco $1.
 La función debe devolver el costo total del pedido, incluyendo un 10% de impuestos. */
 function calcularTotalMcDonalds(hamburguesas = 2, fries = 2, sodas = 2) {
     let sum = 0
-
+    let propina = sum * .08
+    
     if(hamburguesas > 0) {
         sum += hamburguesas * 5  //Multiplicamos la hamburguesa por 5 ya que es el costo de la hamburguesa
     } 
