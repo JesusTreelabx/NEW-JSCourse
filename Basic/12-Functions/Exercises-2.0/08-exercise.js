@@ -24,7 +24,7 @@ function personalizarDonasKrispy(cantidadDonas, donaSabores) {
     if(totalDeDonas > 12) {
         total = total * .90
     }
-    return `Tu pedido de ${totalDeDonas} de donas ${donaSabores} cuesta $ ${total}`
+    return `Tu pedido de ${totalDeDonas} donas ${donaSabores.join(", ")} cuesta $ ${total}`
 }
 
 
