@@ -1,6 +1,6 @@
 
 
-/* Actualizar Inventario en Minisuper
+/* Actualizar Inventario en Minisuper.
 Función: actualizarInventario(productos, movimientos)
 • productos: arreglo de objetos { sku, nombre, stock }.
 • movimientos: arreglo de objetos { sku, tipo: "entrada"|"salida", cantidad }.
@@ -22,11 +22,24 @@ function actualizarInventario(productos, movimientos){
         
         if(mov.tipo === "entrada"){
             entrada += mov.cantidad
-        }
+            }
         if(mov.tipo === "salida"){
             salida += mov.cantidad
+            }
         }
-        }
+
+    return {
+        inventarioActual: [{ sku: "A1", nombre: "Agua", stock: 6 }],
+        totalEntradas: entrada,
+        totalSalidas: salida
+    }
 }
 
-console.log(actualizarInventario())
+console.log(actualizarInventario(
+    [{ sku: "A1", nombre: "Agua", stock: 5 }],
+[{ sku: "A1", tipo: "entrada", cantidad: 3 }],
+))
+
+console.log(actualizarInventario(
+    
+))
