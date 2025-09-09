@@ -20,22 +20,38 @@ function prestarLibro(libros, usuarios, solicitud){
     let resultado 
 
     const usuarioEncontrado = usuarios.find(usuario => usuario.idUsuario === solicitud.idUsuario) 
-    if (!usuarioEncontrado)
+    if (!usuarioEncontrado){
         return "No se encontro este usuario!"
+    } 
 
     const libroEncontrado = libros.find(libro => libro.idLibro === solicitud.idLibro)
-    if (!libroEncontrado)
+    if (!libroEncontrado){
         return "No se encontro este libro!"
+    }
 
-    console.log(libroEncontrado)
+    if(libroEncontrado.copias <= 0){
+        return "El libro no disponible"
+    }
+
+    if(libroEncontrado.categoria === "+18" && usuarioEncontrado.edad < 18){
+        return "Tienes que ser mayor a 18 anios"
+    }
+
+    return {
+        ok: true, 
+        mensaje: "Prestamo exitoso"
+    }
+
+console.log(libroEncontrado.categoria)
+
 }
 
 const libros = [
     {
         idLibro: 818,
         titulo: "Principito",
-        categoria: "Novela",
-        copias: 2
+        categoria: "+18",
+        copias: 1
     }
 ]
 
