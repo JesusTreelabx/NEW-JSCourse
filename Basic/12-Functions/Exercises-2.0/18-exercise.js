@@ -52,6 +52,12 @@ const libros = [
         titulo: "Principito",
         categoria: "+18",
         copias: 1
+    },
+    {
+        idLibro: 202,
+        titulo: "Harry Potter",
+        categoria: "Eeryone",
+        copias: 1
     }
 ]
 
@@ -60,7 +66,13 @@ const usuarios = [
         idUsuario: 11,
         nombre: "Leslie",
         edad: 22
-    }
+    },
+    {
+        iusuario: 24,
+        nombre: "Pedro",
+        edad: 9
+    },
+
 ]
 
 const solicitud = {
@@ -68,4 +80,5 @@ const solicitud = {
     idLibro: 818
 }
 
+console.log(prestarLibro(libros, usuarios, solicitud))
 console.log(prestarLibro(libros, usuarios, solicitud))
