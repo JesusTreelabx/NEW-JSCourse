@@ -25,15 +25,22 @@ calcularTotal([
 */
 
 function calcularTotal(carrito){
+    let subTotal = 0
 
-    if(carrito.precio <= 0){
-        return "Para que la compra sea valida el precio debe ser mayor a 0"
-    }
-    if(carrito.cantidad <= 0){
-        return "Debe incluir al menos un producto "
+    for(let i = 0; i < carrito.length; i++){
+        if(carrito[i].precio > 0 && carrito[i].cantidad > 0){
+            subTotal += ((carrito[i].precio * carrito[i].cantidad))
+        }
     }
 
-    const subTotal = (())
+    let IVA = subTotal * 0.16
+    let total = subTotal + IVA
+
+    return {
+        subTotal: subTotal,
+        IVA: IVA,
+        total: total
+    }
 }
 
 
